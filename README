@@ -1,0 +1,64 @@
+# 123 Fakturera - Price List & Auth Portal
+
+This project consists of a comprehensive Full-Stack modernization of the Login and Price List modules for the "123 Fakturera" platform A robust architecture was implemented from scratch, prioritizing User Experience (UX) and a 100% responsive design
+
+## Key Features
+
+### Frontend (React)
+- **Dynamic Price List:** Pill-based table design with custom spacing for enhanced readability
+- **Real-Time Search:** Instant filtering system for product names
+- **Responsive Design:** Full adaptation for mobile devices using a Hamburger menu system and action buttons that transform into circular icons
+- **Internationalization:** Multi-language support (Swedish/English) with dynamic asset loading
+
+### Backend (Node.js)
+- **Built from Scratch:** Custom server engineered with Node.js and Express to handle all application logic
+- **Security:** Secure authentication system based on JSON Web Tokens (JWT)
+- **Translation API:** Dynamic endpoint for language management (`/api/translations/:lang`)
+- **Data Management:** PostgreSQL integration to fetch and manage product and user data
+- **CORS Configuration:** Implemented Cross-Origin Resource Sharing to allow secure communication between the Render-hosted Frontend and Backend services.
+- **SSL Database Connection:** Secure connection to PostgreSQL via SSL (Secure Sockets Layer), ensuring encrypted data transfer between the API and the database.
+
+## Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://gitlab.com/navitii/fakturera
+Install dependencies (Frontend & Backend):
+
+Bash
+cd client && npm install
+cd ../server && npm install
+Environment Variables: Configure the .env file with your PostgreSQL credentials and JWT_SECRET.
+
+Start the project:
+
+Bash
+# Run in separate terminals
+npm start
+
+---
+
+### 📋 Technical Specifications for Testing
+
+To ensure accurate QA testing, here is the breakdown of the technologies and credentials used
+
+**1. Development Environment:**
+* **React:** Version 18.x (utilizing Functional Components and Hooks like `useState` and `useEffect`)
+* **JavaScript:** ES6+ (Stable Node.js version 18+ for the backend)
+* **CSS:** CSS3 with custom Media Queries for breakpoints at 768px (no external UI frameworks to maintain a unique design)
+* **Database:** PostgreSQL
+
+**2. Libraries & Dependencies:**
+* **Iconography:** `lucide-react` for clean, scalable vector icons
+* **Security:** `jsonwebtoken` for session management
+* **Server:** `express` for route and middleware management
+* **Communication:** `fetch` API for backend requests.
+
+**3. Deployment Links:**
+* **App (Frontend):** `https://fakturera-frontend-yhd1.onrender.com`
+* **API (Backend):** `https://fakturera-r9ge.onrender.com`
+
+**4. Access Credentials (Mini App):**
+* **Username / Email:** `andres@test.com`
+* **Password:** `123456`
+* **Note:** Upon login, the system generates a JWT token stored in the browser to maintain the active session
