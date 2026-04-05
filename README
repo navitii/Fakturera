@@ -54,7 +54,11 @@ To ensure accurate QA testing, here is the breakdown of the technologies and cre
 * **Server:** `express` for route and middleware management
 * **Communication:** `fetch` API for backend requests.
 
-**3. Access Credentials (Mini App):**
+**3. Deployment Links:**
+* **App (Frontend):** `https://fakturera-frontend-yhd1.onrender.com`
+* **API (Backend):** `https://fakturera-r9ge.onrender.com`
+
+**4. Access Credentials (Mini App):**
 * **Username / Email:** `andres@test.com`
 * **Password:** `123456`
 * **Note:** Upon login, the system generates a JWT token stored in the browser to maintain the active session
